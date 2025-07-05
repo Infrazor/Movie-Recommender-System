@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 import requests
 import time
+import os
 import gdown  # for downloading from Google Drive
 
 # Automatically download similarity.pkl if not present
