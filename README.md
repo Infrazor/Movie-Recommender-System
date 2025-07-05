@@ -1,7 +1,15 @@
 # 🎬 Movie Recommender System
 
-A content-based movie recommender system built using **Python, Pandas, Scikit-learn**, and **Streamlit**. It suggests similar movies based on text similarity and displays movie posters using the **TMDB API**.
+[![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org)
+[![Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-red)](https://streamlit.io)
+[![Deployed on AWS EC2](https://img.shields.io/badge/Deployed-AWS_EC2-green)](http://13.202.218.170:8501)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+A content-based movie recommendation engine that suggests similar movies using cosine similarity on NLP tags. It fetches movie posters from the TMDb API and displays them in a dynamic web app using Streamlit.
+
+## 🚀 Demo
+**Live**: [Using AWS](http://13.202.218.170:8501)
+          [Using Render](https://movie-recommender-system-nji5.onrender.com/)
 ---
 
 ## 🚀 Features
