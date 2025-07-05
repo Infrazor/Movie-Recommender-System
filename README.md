@@ -9,7 +9,7 @@ A content-based movie recommendation engine that suggests similar movies using c
 
 ## 🚀 Demo
 **Live**: [Using AWS](http://13.202.218.170:8501)
-          [Using Render](https://movie-recommender-system-nji5.onrender.com/)
+[Using Render](https://movie-recommender-system-nji5.onrender.com/)
 ---
 
 ## 🚀 Features
