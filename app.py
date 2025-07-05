@@ -83,5 +83,4 @@ if st.button('Show Recommendation'):
             if recommended_movie_posters[i]:
                 st.image(recommended_movie_posters[i])
             else:
-                st.image("https://via.placeholder.com/200x300?text=No+Poster+Available")
-                st.text("No poster available")
+                st.image("https://via.placeholder.com/200x300?text=Poster+Unavailable", caption="Poster not found", use_container_width=True)
