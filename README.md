@@ -1,11 +1,5 @@
 # 🎬 Movie Recommender System
-![GitHub last commit](https://img.shields.io/github/last-commit/Infrazor/movie-recommender-system)
-![GitHub repo size](https://img.shields.io/github/repo-size/Infrazor/movie-recommender-system)
-![GitHub](https://img.shields.io/github/license/Infrazor/movie-recommender-system)
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Infrazor/movie-recommender-system/main/assets/banner.png" alt="Movie Recommender Banner" width="100%">
-</p>
 A content-based movie recommender system built using **Python, Pandas, Scikit-learn**, and **Streamlit**. It suggests similar movies based on text similarity and displays movie posters using the **TMDB API**.
 
 ---
