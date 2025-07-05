@@ -8,8 +8,8 @@
 A content-based movie recommendation engine that suggests similar movies using cosine similarity on NLP tags. It fetches movie posters from the TMDb API and displays them in a dynamic web app using Streamlit.
 
 ## 🚀 Demo
-**Live**: [Using AWS](http://13.202.218.170:8501)
-[Using Render](https://movie-recommender-system-nji5.onrender.com/)
+**Live**: [AWS](http://13.202.218.170:8501)
+[Render](https://movie-recommender-system-nji5.onrender.com/)
 ---
 
 ## 🚀 Features
