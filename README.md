@@ -54,18 +54,19 @@ Make sure `movies_dict.pkl` and `similarity.pkl` are in the same folder as `app.
 
 ## 📥 Download similarity.pkl
 
-The `similarity.pkl` file is too large for GitHub (175 MB), so it's hosted on Google Drive:
+The `similarity.pkl` file is too large for GitHub (90 MB), so it's hosted on Google Drive:
 
-👉 [Download similarity.pkl from Google Drive](https://drive.google.com/uc?export=download&id=16leZ4tzu5ZMNOtMNWukkYkgG-NAfGpua)
+👉 [Download similarity.pkl from Google Drive](https://drive.google.com/uc?export=download&id=1Tt908E-ohirYERq2tnykItJDev6Y9F48)
 
 **Steps:**
-1. Download the file
+1. Download the file manually (if needed)
 2. Place it in your project folder next to `app.py`
 3. Run `streamlit run app.py`
 
-> ⚠️ Without this file, recommendations will not work.
+> ⚠️ Without this file, recommendations will not work. If running from the cloud (Render, EC2), the app auto-downloads this file.
 
 ---
+
 
 ## 📁 Files in the Project
 
