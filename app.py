@@ -3,7 +3,17 @@ import pickle
 import pandas as pd
 import requests
 import time
+import gdown  # for downloading from Google Drive
 
+# Automatically download similarity.pkl if not present
+file_id = "16leZ4tzu5ZMNOtMNWukkYkgG-NAfGpua"
+gdrive_url = f"https://drive.google.com/uc?export=download&id={file_id}"
+
+if not os.path.exists("similarity.pkl"):
+    with st.spinner("Downloading similarity.pkl..."):
+        gdown.download(gdrive_url, "similarity.pkl", quiet=False)
+
+# ---------------- Poster Functions ----------------
 
 @st.cache_data(show_spinner=False)#Benefit: Each unique movie_id is only fetched once — faster, more stable, and no repeated failures.
 def fetch_poster_cached(movie_id):
@@ -32,13 +42,13 @@ def fetch_poster(movie_id):
             return None
     return poster
 
-
+# ---------------- Load Data ----------------
 
 movies_dict = pickle.load(open('movies_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
-
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
+# ---------------- Recommendation Logic ----------------
 
 def recommend(movie):
     movie_index = movies[movies['title'] == movie].index[0]
@@ -55,7 +65,7 @@ def recommend(movie):
         time.sleep(0.2)  # small delay to avoid overloading the API
     return recommended_movie_name, recommended_movie_posters
 
-
+# ---------------- UI ----------------
 
 st.title('Movie Recommender System')
 
